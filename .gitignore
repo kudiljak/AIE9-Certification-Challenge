@@ -144,6 +144,18 @@ ENV/
 env.bak/
 venv.bak/
 
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/.next/
+.next/
+
+# Local env files (do not commit secrets)
+*.env.local
+
+# OS cruft
+.DS_Store
+
 # Spyder project settings
 .spyderproject
 .spyproject
