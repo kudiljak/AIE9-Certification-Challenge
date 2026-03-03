@@ -9,6 +9,10 @@ Welcome to your **AI-powered hair salon booking assistant**. This project combin
 The goal is to feel like texting a friendly receptionist who never gets tired.
 
 ---
+## 🎥 Loom Demo Video
+
+You can watch a short walkthrough of the project here:
+https://www.loom.com/share/89c0529680c24ba49d1f336eee3a60ca
 
 ### Project structure
 
