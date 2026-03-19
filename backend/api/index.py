@@ -35,6 +35,24 @@ def _extract_content(msg: dict) -> str:
         )
     return ""
 
+def _prepare_input(request: ChatRequest):
+    """Shared input preparation (DRY)."""
+    if request.input is not None:
+        return request.input, request.config or {}
+
+    if not request.message:
+        return None, None
+
+    input_data = {
+        "messages": [{"role": "user", "content": request.message}]
+    }
+
+    config = dict(request.config or {})
+    config.setdefault("configurable", {})
+    config["configurable"]["thread_id"] = request.thread_id or "default"
+
+    return input_data, config
+
 @app.get("/")
 @app.get("/health")
 def root():
@@ -75,4 +93,31 @@ async def _chat(request: ChatRequest):
             break
     return {"message": final_content}
 
-    
+@app.post("/chat-stream")
+async def chat_stream(request: ChatRequest):
+    input_data, config = _prepare_input(request)
+
+    if input_data is None:
+        return {"error": "message or input required"}
+
+    agent = await get_agent()
+
+    async def generator():
+        async for chunk in agent.astream(
+            input_data,
+            context=request.context or {},
+            config=config,
+        ):
+            messages = chunk.get("messages", [])
+
+            for msg in messages:
+                dump = msg.model_dump(mode="json") if hasattr(msg, "model_dump") else msg
+
+                if isinstance(dump, dict) and dump.get("type") == "ai":
+                    content = _extract_content(dump)
+
+                    if content:
+                        # SSE format (frontend-friendly)
+                        yield f"data: {content}\n\n"
+
+    return StreamingResponse(generator(), media_type="text/event-stream")

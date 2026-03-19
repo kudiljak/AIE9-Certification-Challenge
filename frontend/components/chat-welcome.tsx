@@ -34,7 +34,7 @@ export function ChatWelcome({ onSuggestionClick }: ChatWelcomeProps) {
         <Sparkles size={24} className="text-accent" />
       </div>
       <h2 className="font-serif text-3xl md:text-4xl font-light text-foreground mb-3 text-balance">
-        Welcome to Maison Lumiere
+        Welcome to Maison Lumière
       </h2>
       <p className="text-sm text-muted-foreground max-w-sm leading-relaxed mb-10">
         Your personal booking concierge. How may I assist you today?

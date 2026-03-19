@@ -14,7 +14,7 @@ export function ChatHeader({ onReset, hasMessages }: ChatHeaderProps) {
         </div>
         <div>
           <h1 className="font-serif text-lg font-medium text-foreground tracking-wide">
-            Maison Lumiere
+            Maison Lumière
           </h1>
           <p className="text-[11px] text-muted-foreground tracking-widest uppercase">
             Booking Assistant

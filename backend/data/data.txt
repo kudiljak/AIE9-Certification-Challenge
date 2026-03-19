@@ -1,10 +1,18 @@
 # Hair Salon – Business Information
 
+## Salon name and location
+**Maison Lumiere**  
+123 Newbury Street, Boston, MA 02116
+
 ## Business hours
 The salon is open:
 - Monday to Friday: 9:00–18:00
 - Saturday: 9:00–16:00
 - Sunday: closed
+
+## Stylists
+
+**Mia** — Senior stylist specializing in cuts, color, and balayage. Available for all services. 
 
 Services, Duration, and Descriptions
 
@@ -90,6 +98,19 @@ A targeted treatment designed to soothe irritation, reduce dandruff, and promote
 
 ---
 
+## ⬆️ Upsells and 📦 Bundle deals (add-ons when booked with another service)
+
+When you book any haircut or coloring service, you can add these at a reduced price:
+
+- **Blow-Dry add-on** — $15 (regular $25) when added to any haircut or coloring
+- **Deep Conditioning add-on** — $15 (regular $25) when added to coloring or keratin
+- **Scalp Treatment add-on** — $12 (regular $20) when added to any service
+
+Upsell prices apply only when the add-on is booked in the same visit as a qualifying service. The assistant can offer these when confirming a booking.
+These bundle deals must be booked as a single appointment. Total duration is summed duration of single services making the bundle.
+
+---
+
 ## 💡 Pricing Notes
 
 - Prices may vary depending on hair length and thickness.
@@ -117,6 +138,9 @@ Consultations are free when booking a service.
 
 Do prices include styling?  
 Basic styling is included with haircuts, but advanced styling (e.g., formal updos) is priced separately.
+
+Do you have add-ons or bundles?  
+Yes. We offer upsells (e.g. blow-dry or deep conditioning at a discount when added to another service) and bundle deals (e.g. Cut & Style, Color & Care). Ask for details when booking.
 
 ---
 
@@ -208,4 +232,4 @@ Yes, but please ensure they do not disturb other clients.
 
 ---
 
-Thank you for choosing Luna Hair Studio. If you have any additional questions, feel free to contact us.
+Thank you for choosing Maison Lumiere. If you have any additional questions, feel free to contact us.

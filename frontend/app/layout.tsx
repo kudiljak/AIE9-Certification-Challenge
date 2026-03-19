@@ -15,8 +15,8 @@ const _sans = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Maison Lumiere | Luxury Hair Salon',
-  description: 'Experience the art of luxury hair care. Book your appointment with our expert stylists at Maison Lumiere.',
+  title: 'Maison Lumière | Luxury Hair Salon',
+  description: 'Experience the art of luxury hair care. Book your appointment with our expert stylists at Maison Lumière.',
   generator: 'v0.app',
   icons: {
     icon: [
